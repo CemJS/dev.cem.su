@@ -3,6 +3,7 @@
     "front": [
         "header",
         "home",
-        "footer"
+        "info",
+        "services"
     ]
 }

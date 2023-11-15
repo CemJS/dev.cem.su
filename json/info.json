@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Местонахождение",
+    "icon": "/contents/icons/location.svg",
+    "desc": "г. Новороссийск​, ул.Набережная им. Адмирала Серебрякова, 27а, ​4 этаж, офис 39"
+  },
+  {
+    "name": "Позвоните нам",
+    "icon": "/contents/icons/phone.svg",
+    "desc": "89889468900"
+  },
+  {
+    "name": "Напишите нам",
+    "icon": "/contents/icons/mail.svg",
+    "desc": "support@crypto-emergency.com"
+  }
+]

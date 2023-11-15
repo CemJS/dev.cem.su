@@ -1,8 +1,8 @@
-import { Cemjsx, front, Listener, Func, Static } from "cemjs-all"
+import { Cemjsx, front, Func, Static } from "cemjs-all"
 import Navigation from "./navigation"
 
 
-Listener.finish = () => {
+front.listener.finish = () => {
     return
 }
 

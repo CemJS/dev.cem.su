@@ -1,8 +1,9 @@
-import { Cemjsx, front, Func, Static, Fn } from "cemjs-all"
+import { Cemjsx, front, Func, Static, Fn, Ref } from "cemjs-all"
 import Navigation from "./navigation"
 
 
 front.listener.finish = () => {
+    console.log('=2bb489=', Ref.text)
     return
 }
 
@@ -11,15 +12,16 @@ front.func.test = () => {
 }
 
 front.loader = () => {
-    Static.tt1 = 1
     return
 }
 
 front.display = () => {
     return (
-        <div>
-            <Navigation />
-        </div>
+        <header class="header">
+            <div class="wrapper">
+                <Navigation />
+            </div>
+        </header>
     )
 }
 

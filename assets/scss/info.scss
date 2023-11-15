@@ -1,0 +1,38 @@
+.info {
+
+    &-inner {
+        border-radius: 5.5rem;
+        background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+
+        &:not(:last-child) {
+            border-right: 1px solid #C0B7E8;
+        }
+
+        &-title {
+            display: flex;
+            padding-bottom: 0.6rem;
+            gap: 1.2rem;
+        }
+
+        &-subtitle {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 125%;
+        }
+
+        &-desc {
+            font-size: 0.75rem;
+        }
+
+    }
+
+}

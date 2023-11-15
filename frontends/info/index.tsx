@@ -24,7 +24,7 @@ front.loader = () => {
 
 front.display = () => {
     return (
-        <section class="presa">
+        <section class="info">
             <div class="wrapper">
                 <Navigation />
             </div>
