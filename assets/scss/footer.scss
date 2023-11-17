@@ -1,0 +1,26 @@
+.footer {
+  background: #211E2E;
+
+
+  &-inner {
+    padding: 1rem 0;
+
+    .socials_list {
+      width: 100%;
+    }
+  }
+
+  &-top {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-text {
+    font-weight: 700;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    line-height: 125%;
+    text-align: center;
+  }
+}

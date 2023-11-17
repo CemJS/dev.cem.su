@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "/contents/socials/instagram.png",
+    "name": "Instagram",
+    "url": "https://www.instagram.com/cryptoemergencyrussia/?hl=ru"
+  },
+  {
+    "icon": "/contents/socials/tiktok.png",
+    "name": "Tiktok",
+    "url": "https://www.tiktok.com/@cryptoemergencyrussia"
+  },
+  {
+    "icon": "/contents/socials/youtube.png",
+    "name": "Youtube",
+    "url": "https://www.youtube.com/channel/UCb9Fx-fNikzs-OZwnTXepLg/"
+  },
+  {
+    "icon": "/contents/socials/vk.png",
+    "name": "Vkontakte",
+    "url": "https://vk.com/cryptoemergency"
+  },
+  {
+    "icon": "/contents/socials/linkedin.png",
+    "name": "Linkedin",
+    "url": "https://www.linkedin.com/company/86302977"
+  },
+  {
+    "icon": "/contents/socials/twitter.png",
+    "name": "Twitter",
+    "url": "https://twitter.com/cryptoemergency"
+  },
+  {
+    "icon": "/contents/socials/discord.png",
+    "name": "Discord",
+    "url": "https://discord.com/invite/Qdm7W8DjYc"
+  },
+  {
+    "icon": "/contents/socials/github.png",
+    "name": "Github",
+    "url": "https://github.com/CryptoEmergency"
+  }
+]

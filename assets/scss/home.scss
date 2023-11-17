@@ -1,48 +1,56 @@
 .presa {
-    background-image: url('svg/backGradient.svg');
+    background-image: url('svg/backGradient1.svg');
     background-position: 100% 100%;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     padding-top: 6rem;
 
     &-inner {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
+        padding: 3rem 0 0 0;
         gap: 2rem;
         height: 100%;
     }
 
-    &-text {
-        padding-top: 2rem;
-        position: relative;
-        font-weight: 700;
-        font-size: 5rem;
-        line-height: 120%;
-        letter-spacing: 5px;
-        transform: rotate(0deg) skew(7deg);
-        color: #afa3db;
-        // background: linear-gradient(92deg, #C0B7E8 -1.02%, #8176AF 36.25%);
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-
-        &_wrap {
-            display: flex;
-            align-self: start;
-        }
-
-        &::before {
-            padding-top: 2rem;
-            content: attr(data-text);
-            position: absolute;
-            top: 15px;
-            left: -20px;
-            color: rgba(0, 0, 0, 0.3);
-            text-shadow: none;
-            filter: blur(8px);
-            z-index: -1;
-        }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        // max-width: 34rem;
     }
+
+    // &-text {
+    //     padding-top: 2rem;
+    //     position: relative;
+    //     font-weight: 700;
+    //     font-size: 5rem;
+    //     line-height: 120%;
+    //     letter-spacing: 5px;
+    //     transform: rotate(0deg) skew(7deg);
+    //     color: #afa3db;
+    //     // background: linear-gradient(92deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+    //     // background-clip: text;
+    //     // -webkit-background-clip: text;
+    //     // -webkit-text-fill-color: transparent;
+
+    //     &_wrap {
+    //         display: flex;
+    //         align-self: start;
+    //     }
+
+    //     &::before {
+    //         padding-top: 2rem;
+    //         content: attr(data-text);
+    //         position: absolute;
+    //         top: 15px;
+    //         left: -20px;
+    //         color: rgba(0, 0, 0, 0.3);
+    //         text-shadow: none;
+    //         filter: blur(8px);
+    //         z-index: -1;
+    //     }
+    // }
 }

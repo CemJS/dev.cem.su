@@ -3,7 +3,6 @@ import Navigation from "./navigation"
 
 
 front.listener.finish = () => {
-    console.log('=2bb489=', Ref.text)
     return
 }
 

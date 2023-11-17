@@ -11,8 +11,9 @@ const RenderSkills = function ({ items }) {
                             <div class="services-skills_item-circle">
                                 <img src={item.icon} alt={item.desc} />
                             </div>
-                            <h5>{item.category}</h5>
-                            <p>{item.desc}</p>
+                            <h5 class="services-skills_item-title">{item.category}</h5>
+                            <div class="services-skills_item-line"></div>
+                            <p class="services-skills_item-desc">{item.desc}</p>
                         </div>
                     )
                 })
@@ -27,12 +28,18 @@ export default function () {
             <div class="title">
                 <div>
                     <h2 class="title-main">Услуги</h2>
-                    <span class="title-desc">Что мы умеем?</span>
+                    <div class="title-desc_wrap">
+                        <span class="title-desc">Что мы умеем?</span>
+                        <div class="arrow">
+                            <div class="arrow-line"></div>
+                            <div class="arrow-rect">
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
-                    nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
-                    quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
-                    lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                <p>Создание современных и функциональных веб-сайтов, телеграм-ботов, которые помогают автоматизировать рутинные задачи, улучшают коммуникацию и повышают эффективность работы вашей компании. </p>
             </div>
 
 

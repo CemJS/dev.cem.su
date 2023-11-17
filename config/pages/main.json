@@ -3,7 +3,12 @@
     "front": [
         "header",
         "home",
+        "technologies",
         "info",
-        "services"
+        "services",
+        "audit",
+        "sendMessage",
+        "slider",
+        "footer"
     ]
 }

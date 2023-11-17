@@ -1,0 +1,89 @@
+[
+  {
+    "name": "backend"
+  },
+  {
+    "name": "frontend"
+  },
+  {
+    "name": "mobile"
+  },
+  {
+    "name": "devops"
+  },
+  {
+    "name": "support"
+  },
+  {
+    "name": "sap"
+  },
+  {
+    "name": "architecture"
+  },
+  {
+    "name": "analytics"
+  },
+  {
+    "name": "development"
+  },
+  {
+    "name": "json"
+  },
+  {
+    "name": "mongo"
+  },
+  {
+    "name": "react"
+  },
+  {
+    "name": "api"
+  },
+  {
+    "name": "golang"
+  },
+  {
+    "name": "typescript"
+  },
+  {
+    "name": "nodejs"
+  },
+  {
+    "name": "python"
+  },
+  {
+    "name": "rest"
+  },
+  {
+    "name": "html"
+  },
+  {
+    "name": "css"
+  },
+  {
+    "name": "javascript"
+  },
+  {
+    "name": "vue"
+  },
+  {
+    "name": "script"
+  },
+  {
+    "name": "design"
+  },
+  {
+    "name": "framework"
+  },
+  {
+    "name": "cemjs"
+  },
+  {
+    "name": "blockchain"
+  },
+  {
+    "name": "smart contract"
+  },
+  {
+    "name": "docker"
+  }
+]
