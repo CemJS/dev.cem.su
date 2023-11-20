@@ -5,6 +5,7 @@ import tech from '@json/technologies'
 
 front.listener.finish = () => {
     Static.root = document.documentElement;
+    console.log('=d4045c=',Static.root)
     Static.marqueeElementsDisplayed = getComputedStyle(Static.root).getPropertyValue("--marquee_elements_displayed")
     Static.root.style.setProperty("--marquee_elements", Ref.marqueeContentStart.children.length)
 

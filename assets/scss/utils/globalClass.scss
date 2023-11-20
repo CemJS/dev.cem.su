@@ -15,7 +15,7 @@
   gap: 2rem;
 
   &-main {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -36,7 +36,19 @@
 .text {
 
   &-main {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 125%;
+  }
+
+  &__fiolet{
+    background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
     line-height: 125%;
   }
 }
@@ -232,6 +244,12 @@
     background: var(--gradient-fiolet);
     color: var(--back-color);
     width: fit-content;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 
@@ -341,7 +359,7 @@
 
 
   .slide {
-    height: 20rem;
+    height: 25rem;
     width: 100%;
     display: grid;
     grid-template-columns: 55% 40%;

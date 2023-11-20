@@ -1,5 +1,5 @@
 import { Cemjsx } from "cemjs-all"
-import services from '@json/services'
+// import services from '@json/services'
 
 const RenderSkills = function ({ items }) {
     return (
@@ -43,7 +43,7 @@ export default function () {
             </div>
 
 
-            <RenderSkills items={services} />
+            {/* <RenderSkills items={services} /> */}
 
         </div>
     )
