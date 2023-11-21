@@ -9,7 +9,7 @@
 }
 
 .bracket {
-  font-size: 2.7rem;
+  font-size: clamp(1.5rem, 4vw, 2.7rem);
   color: #211E2E;
 }
 
@@ -23,7 +23,7 @@
   gap: 2rem;
 
   &-main {
-    font-size: 2.5rem;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -31,11 +31,11 @@
   &-secondary {
     font-weight: 700;
     line-height: 125%;
-    font-size: 2.25rem;
+    font-size: clamp(1.2rem, 2vw, 2.25rem);
   }
 
   &-desc {
-    font-size: 2.25rem;
+    font-size: clamp(1.2rem, 2vw, 2.25rem);
     text-transform: uppercase;
     font-weight: 400;
 
@@ -47,7 +47,7 @@
   }
 
   &-text {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
     font-weight: 500;
     line-height: 125%;
   }
@@ -56,7 +56,7 @@
 .text {
 
   &-main {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 500;
     line-height: 125%;
   }
@@ -142,14 +142,17 @@
 
   &_list {
     list-style: none;
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     padding: 0;
     gap: 15px;
+    margin-bottom: 1rem;
 
     li {
       flex: 1 1 0;
       text-align: center;
-      margin: 0.75rem 0;
+      // margin: 0.75rem 0;
     }
   }
 
@@ -253,7 +256,7 @@
   border-radius: 2.5rem;
   padding: 1rem 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
@@ -611,6 +614,12 @@
 
 @media (max-width: 1170px) {
   .wrapper {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1135px) {
+  .title {
+    grid-template-columns: 1fr;
   }
 }

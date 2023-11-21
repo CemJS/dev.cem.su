@@ -18,9 +18,6 @@
         padding: 1.5rem;
         background: radial-gradient(2900.76% 65.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
         border-radius: 1.5rem;
-        // &:not(:last-child) {
-        //     border-right: 1px solid #C0B7E8;
-        // }
 
         &-title {
             display: flex;
@@ -45,5 +42,18 @@
         }
 
     }
+}
 
+@media(max-width: 767px) {
+    .info {
+        &-inner {
+            padding: 0;
+        }
+
+        &_item {
+            &-subtitle {
+                font-size: clamp(1rem, 3vw, 1.5rem);
+            }
+        }
+    }
 }

@@ -36,3 +36,11 @@
     }
 
 }
+
+@media(max-width: 767px) {
+    .header {
+        &-list {
+            display: none;
+        }
+    }
+}

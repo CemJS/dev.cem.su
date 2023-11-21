@@ -62,12 +62,12 @@ front.func.clearFields = function () {
     }
 
 
-    Static.form.fullName.value,
-        Static.form.email.value,
-        Static.form.phone.value,
-        Static.form.telegram.value,
-        Static.form.comment.value,
-        Fn.init()
+    Static.form.fullName.value = ""
+    Static.form.email.value = ""
+    Static.form.phone.value = ""
+    Static.form.telegram.value = ""
+    Static.form.comment.value = ""
+    Fn.init()
 }
 
 front.loader = () => {
