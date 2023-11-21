@@ -1,5 +1,5 @@
 import { Cemjsx } from "cemjs-all"
-import services from '@json/services'
+import services from '@json/service'
 
 const RenderSkills = function ({ items }) {
     return (
