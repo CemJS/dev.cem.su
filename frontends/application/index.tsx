@@ -16,6 +16,60 @@ front.func.checkForm = function () {
     return
 }
 
+front.func.clearFields = function () {
+    Static.form = {
+        fullName: {
+            value: "",
+            valid: false,
+            error: false,
+            placeholder: "ФИО",
+            view: false,
+            disable: false
+        },
+        email: {
+            value: "",
+            valid: false,
+            error: false,
+            placeholder: "Email адрес",
+            view: false,
+            disable: false
+        },
+        phone: {
+            value: "",
+            valid: false,
+            error: false,
+            placeholder: "Телефон",
+            view: false,
+            disable: false
+        },
+        telegram: {
+            value: "",
+            valid: false,
+            error: false,
+            placeholder: "Telegram",
+            view: false,
+            disable: false
+        },
+        comment: {
+            value: "",
+            valid: false,
+            error: false,
+            placeholder: "Комментарий",
+            view: false,
+            disable: false
+        },
+        isValid: false,
+    }
+
+
+    Static.form.fullName.value,
+        Static.form.email.value,
+        Static.form.phone.value,
+        Static.form.telegram.value,
+        Static.form.comment.value,
+        Fn.init()
+}
+
 front.loader = () => {
     Static.limitComment = 400;
     //-----------------------
