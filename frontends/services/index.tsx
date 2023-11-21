@@ -16,7 +16,7 @@ front.loader = () => {
 
 front.display = () => {
     return (
-        <section class="services">
+        <section class="services" id="services">
             <div class="wrapper">
                 <Navigation />
             </div>

@@ -6,15 +6,17 @@
     background-position: 100% 100%;
 
     &-inner {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        gap: 1rem;
+        background-image: url('images/explore.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right 100%;
     }
 
     &-info {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        max-width: 60%;
 
         &_title {
             font-weight: 700;

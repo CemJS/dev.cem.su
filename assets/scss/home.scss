@@ -13,13 +13,18 @@
         padding: 3rem 0 0 0;
         gap: 2rem;
         height: 100%;
+
+        background-image: url('images/mobile.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right 100%;
     }
 
     &-info {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        // max-width: 34rem;
+        max-width: 60%;
     }
 
     // &-text {

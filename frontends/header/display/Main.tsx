@@ -13,6 +13,13 @@ const RenderMenu = function ({ items }) {
               <a
                 href={item.link}
                 class="header-list_item"
+                onclick={(e) => {
+                  e.preventDefault()
+                  window.scrollTo({
+                    top: document.querySelector(item.link).offsetTop - 75,
+                    behavior: "smooth"
+                  })
+                }}
               >
                 {item.name}
               </a>

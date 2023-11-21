@@ -9,6 +9,7 @@
         "audit",
         "sendMessage",
         "slider",
+        "application",
         "footer"
     ]
 }

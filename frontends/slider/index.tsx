@@ -109,9 +109,12 @@ class Gallery {
         this.debouncedResizeGallery = debounce(this.resizeGallery);
         window.addEventListener('resize', debounce(this.resizeGallery));
         this.lineNode.addEventListener('pointerdown', this.startDrag);
+        this.lineNode.addEventListener('touchstart', this.startDrag);
         window.addEventListener('pointerup', this.stopDrag);
-        window.addEventListener('pointercancel', this.stopDrag)
-        this.dots.addEventListener('click', this.clickDots)
+        window.addEventListener('touchend', this.stopDrag);
+        window.addEventListener('pointercancel', this.stopDrag);
+        window.addEventListener('touchcancel', this.stopDrag)
+        this.dots.addEventListener('click', this.clickDots);
     }
 
     destroyEvents() {
@@ -248,7 +251,6 @@ front.func.test = function (element: HTMLElement, dots: HTMLElement, options = {
         Static.galleryRun = new Gallery(element, dots, options = { margin: 10 })
     }
     Static.callGallery = true;
-    console.log('=963dc4=', "hello")
     Fn.init()
     return
 }
@@ -268,7 +270,7 @@ front.loader = () => {
 
 front.display = () => {
     return (
-        <section class="products">
+        <section class="products" id="products">
             <div class="wrapper">
                 <Navigation />
             </div>

@@ -1,4 +1,4 @@
-import { Cemjsx, Ref } from "cemjs-all"
+import { Cemjsx, Ref, Fn } from "cemjs-all"
 import mobile from '@images/mobile.png'
 
 export default function () {
@@ -10,15 +10,18 @@ export default function () {
           Создаём веб-продукты
           <span class="bracket">{` }`}</span>
         </h1>
-        <p class="text-main">Мы — компания полного цикла. Наши услуги включают маркетинговую стратегию, <span class="text__fiolet">брендинг</span>, 
-        производство рекламных материалов, разработку <span class="text__fiolet">веб-продуктов,</span> поддержку и эффективное привлечение <span class="text__fiolet">аудитории.</span></p>
-        <button class="btn btn__primary">
+        <p class="text-main">Мы — компания полного цикла. Наши услуги включают маркетинговую стратегию, <span class="text__fiolet">брендинг</span>,
+          производство рекламных материалов, разработку <span class="text__fiolet">веб-продуктов,</span> поддержку и эффективное привлечение <span class="text__fiolet">аудитории.</span></p>
+        <button
+          class="btn btn__primary"
+          onclick={() => Fn.initOne("modalOrder", { title: "Оставить заявку на проект" })}
+        >
           Заказать проект
         </button>
       </div>
-      <div>
+      {/* <div>
         <img src={mobile} alt="Разработки компании Crypto Emergency" />
-      </div>
+      </div> */}
     </div>
   )
 }

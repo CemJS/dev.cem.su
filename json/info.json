@@ -7,11 +7,13 @@
   {
     "name": "Позвоните нам",
     "icon": "/contents/icons/phone.svg",
-    "desc": "89889468900"
+    "desc": "+7(938)-540-4512",
+    "center": true
   },
   {
     "name": "Напишите нам",
     "icon": "/contents/icons/mail.svg",
-    "desc": "support@crypto-emergency.com"
+    "desc": "support@crypto-emergency.com",
+    "center": true
   }
 ]

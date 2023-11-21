@@ -5,21 +5,22 @@
     background-position: right 100%;
 
     &-inner {
-        border-radius: 5.5rem;
-        background: radial-gradient(2900.76% 65.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
         padding: 1.5rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1rem;
     }
 
     &_item {
         display: flex;
+        align-items: center;
         flex-direction: column;
         padding: 1.5rem;
-
-        &:not(:last-child) {
-            border-right: 1px solid #C0B7E8;
-        }
+        background: radial-gradient(2900.76% 65.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+        border-radius: 1.5rem;
+        // &:not(:last-child) {
+        //     border-right: 1px solid #C0B7E8;
+        // }
 
         &-title {
             display: flex;
@@ -34,7 +35,13 @@
         }
 
         &-desc {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
+
+            &__center {
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 500;
+            }
         }
 
     }

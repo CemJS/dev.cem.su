@@ -18,7 +18,7 @@ front.loader = () => {
 
 front.display = () => {
     return (
-        <section class="presa">
+        <section class="presa" id="presa">
             <div class="wrapper">
                 <Navigation />
             </div>
