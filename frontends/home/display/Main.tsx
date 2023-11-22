@@ -10,8 +10,8 @@ export default function () {
           Создаём веб-продукты
           <span class="bracket">{` }`}</span>
         </h1>
-        <p class="text-main">Мы — компания полного цикла. Наши услуги включают маркетинговую стратегию, <span class="text__fiolet">брендинг</span>,
-          производство рекламных материалов, разработку <span class="text__fiolet">веб-продуктов,</span> поддержку и эффективное привлечение <span class="text__fiolet">аудитории.</span></p>
+        <p class="text-main">Мы — компания полного цикла. Наши услуги включают маркетинговую стратегию, брендинг,
+          производство рекламных материалов, разработку веб-продуктов, поддержку и эффективное привлечение аудитории.</p>
         <button
           class="btn btn__primary"
           onclick={() => Fn.initOne("modalOrder", { title: "Оставить заявку на проект" })}
@@ -19,9 +19,9 @@ export default function () {
           Заказать проект
         </button>
       </div>
-      {/* <div>
-        <img src={mobile} alt="Разработки компании Crypto Emergency" />
-      </div> */}
+      <div class="presa-image">
+        <img src={mobile} alt="Разработка веб продуктов" />
+      </div>
     </div>
   )
 }

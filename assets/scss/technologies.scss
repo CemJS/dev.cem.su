@@ -95,7 +95,6 @@
     }
 
     100% {
-        // transform: translateX(calc(-1*var(--marquee_element_width)*var(--marquee_elements)));
         transform: translateX(-100%);
     }
 }
@@ -139,7 +138,17 @@
 @media (max-width: 464px) {
     :root {
         --marquee_height: 12vh;
-        --marquee_elements_displayed: 2;
+        --marquee_elements_displayed: 3;
         --marquee_animation_duration: 35s;
+    }
+
+    .tech {
+        .wrapper {
+            padding: 0;
+        }
+
+        .title {
+            padding: 0 1.5rem;
+        }
     }
 }

@@ -1,12 +1,17 @@
 .footer {
   background: #211E2E;
 
-
   &-inner {
     padding: 1rem 0;
 
     .socials_list {
       width: 100%;
+    }
+  }
+
+  &-logo {
+    img {
+      height: 60px;
     }
   }
 
@@ -22,5 +27,20 @@
     font-size: clamp(0.8rem, 2.5vw, 1rem);
     line-height: 125%;
     text-align: center;
+  }
+}
+
+@media(max-width: 464px) {
+  .footer {
+
+    &-top {
+      flex-direction: column;
+    }
+
+    &-logo {
+      img {
+        height: 75px;
+      }
+    }
   }
 }

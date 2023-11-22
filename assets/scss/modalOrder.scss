@@ -5,7 +5,7 @@
     background: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 111;
     opacity: 0;
     transform: scale(1.2);
     transition: transform 0.2s 0s ease-in-out, opacity 0.2s 0s ease-in-out;
@@ -28,10 +28,10 @@
         border: none;
         outline: none;
         cursor: pointer;
-        background: var(--green);
-        box-shadow: 0 0 2px var(--green);
+        background: var(--gradient-fiolet);
+        box-shadow: 0 0 2px var(--gradient-fiolet);
         opacity: 0.5;
-        color: var(--black);
+        color: var(--back-modal);
         transition: all ease-in-out 0.35s;
 
         &:hover {
@@ -56,20 +56,25 @@
         background: var(--back_modal);
         box-shadow: 0 0 15px -10px rgba(221, 221, 221, 0.5);
         color: var(--white);
+
+
+        @media(max-width: 464px) {
+            padding: 0.8rem;
+        }
     }
 
     &_header {
         &-title {
             font-size: clamp(1rem, 2vw, 1.5rem);
             line-height: 125%;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
         }
     }
 
     &_form {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2rem;
 
         &-row {
             width: 100%;

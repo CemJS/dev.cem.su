@@ -3,7 +3,6 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    // border-bottom: 1px solid #FFFFFF;
 
     &-inner {
         display: flex;
@@ -15,11 +14,9 @@
 
     &-logo {
         img {
-            height: 60px;
+            height: 65px;
         }
     }
-
-    &-nav {}
 
     &-list {
         display: flex;

@@ -1,4 +1,4 @@
-import { Cemjsx, front, Func, Static, Fn } from "cemjs-all"
+import { Cemjsx, front, Ref, Static, Fn } from "cemjs-all"
 import Navigation from "./navigation"
 
 
@@ -61,13 +61,13 @@ front.func.clearFields = function () {
         isValid: false,
     }
 
-
-    Static.form.fullName.value = ""
-    Static.form.email.value = ""
-    Static.form.phone.value = ""
-    Static.form.telegram.value = ""
-    Static.form.comment.value = ""
+    Ref.fullName.value = ""
+    Ref.phone.value = ""
+    Ref.email.value = ""
+    Ref.telegram.value = ""
+    Ref.modalComment.value = ""
     Fn.init()
+    return
 }
 
 front.loader = () => {

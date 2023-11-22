@@ -1,9 +1,11 @@
-import { Cemjsx, front, Ref, Fn } from "cemjs-all"
+import { Cemjsx, front, Ref, Fn, Func } from "cemjs-all"
 import Navigation from "./navigation"
 
 
 front.listener.finish = () => {
-    return
+    setTimeout(() => {
+        Func.close()
+    }, 5000);
 }
 
 front.func.show = function ($el: HTMLElement) {

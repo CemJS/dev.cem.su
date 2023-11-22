@@ -1,4 +1,4 @@
-import { Cemjsx, front, Func, Static, Ref, Fn } from "cemjs-all"
+import { Cemjsx, front, Static, Ref, Fn } from "cemjs-all"
 import Navigation from "./navigation"
 
 
@@ -9,7 +9,7 @@ front.listener.finish = () => {
 front.func.show = function ($el: HTMLElement) {
     setTimeout(() => {
         $el.classList.add('modal__active');
-        // this.Variable.$el.body.style.overflow = 'hidden';
+        front.Variable.$el.body.style.overflow = 'hidden';
     }, 100);
 }
 
@@ -17,7 +17,7 @@ front.func.close = function () {
     Ref.modal.classList.remove('modal__active');
     setTimeout(() => {
         Fn.clearData()
-        // this.Variable.$el.body.style.overflow = 'auto';
+        front.Variable.$el.body.style.overflow = 'auto';
     }, 500)
 }
 
@@ -47,7 +47,7 @@ front.loader = () => {
             value: "",
             valid: false,
             error: false,
-            placeholder: "Email адрес",
+            placeholder: "Email",
             view: false,
             disable: false
         },

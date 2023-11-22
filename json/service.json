@@ -1,41 +1,41 @@
 [
   {
-    "icon": "/contents/services/app.svg",
+    "icon": "/contents/iconsForDev/laptop.svg",
     "category": "Sites",
     "desc": "Lending page"
   },
   {
-    "icon": "/contents/services/bot.svg",
+    "icon": "/contents/iconsForDev/autsorsing.svg",
     "category": "Web 3.0",
     "desc": "Web 3 технологии"
   },
   {
-    "icon": "/contents/services/site.svg",
+    "icon": "/contents/iconsForDev/laptop1.svg",
     "category": "Sites",
     "desc": "Админ панели"
   },
   {
-    "icon": "/contents/services/app.svg",
+    "icon": "/contents/iconsForDev/key.svg",
     "category": "Telegram",
     "desc": "Telegram Bot"
   },
   {
-    "icon": "/contents/services/bot.svg",
+    "icon": "/contents/iconsForDev/mobile.svg",
     "category": "Apps",
     "desc": "Мобильные приложения"
   },
   {
-    "icon": "/contents/services/site.svg",
+    "icon": "/contents/iconsForDev/arkhitektura.svg",
     "category": "Web 3.0",
     "desc": "Blockchain"
   },
   {
-    "icon": "/contents/services/app.svg",
+    "icon": "/contents/iconsForDev/bitrix.svg",
     "category": "Web 3.0",
     "desc": "Смарт контракты"
   },
   {
-    "icon": "/contents/services/bot.svg",
+    "icon": "/contents/iconsForDev/dizayn.svg",
     "category": "AI",
     "desc": "Обучение моделей"
   }

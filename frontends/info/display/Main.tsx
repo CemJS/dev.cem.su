@@ -1,4 +1,4 @@
-import { Cemjsx, Ref } from "cemjs-all"
+import { Cemjsx, Fn } from "cemjs-all"
 import info from '@json/info'
 
 export default function () {
@@ -7,7 +7,7 @@ export default function () {
       {
         info.map(item => {
           return (
-            <div class="info_item">
+            <a class="info_item" href={item.link} onclick={Fn.link}>
               <div class="info_item-title">
                 <img src={item.icon} alt={item.name} />
                 <span class="info_item-subtitle">{item.name}</span>
@@ -17,10 +17,7 @@ export default function () {
               >
                 {item.desc}
               </span>
-              {/* <span class="info_item-title">{item.name}</span>
-                <span class="info_item-desc">{item.desc}</span> */}
-
-            </div>
+            </a>
           )
         })
       }

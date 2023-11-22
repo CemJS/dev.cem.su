@@ -1,23 +1,22 @@
 .presa {
-    background-image: url('svg/backGradient1.svg');
+    background-image: url('svg/backGradient2.svg');
     background-position: 100% 100%;
     background-size: cover;
-    height: 80vh;
+    background-repeat: no-repeat;
+    height: 70vh;
     width: 100%;
     padding-top: 6rem;
 
     &-inner {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
         padding: 3rem 0 0 0;
         gap: 2rem;
         height: 100%;
-
-        background-image: url('images/mobile.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right 100%;
+        // background-image: url('images/mobile.png');
+        // background-size: 25rem;
+        // background-repeat: no-repeat;
+        // background-position: right 100%;
     }
 
     &-info {
@@ -27,14 +26,21 @@
         max-width: 60%;
     }
 
+    &-image {
+        img {
+            height: 100%;
+        }
+    }
+
 }
 
 @media(max-width: 1130px) {
     .presa {
-        height: 55vh;
+        height: 100%;
 
         &-inner {
             background-image: none;
+            padding: 0;
         }
 
         &-info {
@@ -43,13 +49,24 @@
     }
 }
 
+@media(max-width: 1000px) {
+    .presa {
+        &-image {
+            display: none;
+        }
+    }
+}
+
 @media(max-width: 464px) {
     .presa {
-        height: 45vh;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
 
-        &-inner {
-            padding: 0;
+        // &-inner {
+        //     padding: 0;
+        // }
+
+        &-info {
+            gap: 1rem;
         }
     }
 }

@@ -1,5 +1,4 @@
 .application {
-
     .title-secondary {
         margin-bottom: 0.5rem;
     }
@@ -13,7 +12,7 @@
 
     &-row {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         gap: 1rem;
     }
 
@@ -23,5 +22,17 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
+    }
+
+    &-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .application {
+        &-row {
+            gap: 2rem;
+        }
     }
 }

@@ -1,4 +1,4 @@
-import { Cemjsx, Static, front, Func, Ref, Fn } from "cemjs-all"
+import { Cemjsx, Static, front, Func, Fn } from "cemjs-all"
 import email from '@svg/icons/email.svg'
 import phone from '@svg/icons/phoneField.svg'
 import user from '@svg/icons/user.svg'
@@ -18,6 +18,7 @@ export default function () {
                 ]}>
                     <input
                         type="text"
+                        ref="fullName"
                         required
                         autocomplete="off"
                         oninput={(e: any) => {
@@ -39,6 +40,7 @@ export default function () {
                 ]}>
                     <input
                         type="text"
+                        ref="phone"
                         required
                         autocomplete="off"
                         oninput={(e: any) => {
@@ -63,6 +65,7 @@ export default function () {
                 ]}>
                     <input
                         type="email"
+                        ref="email"
                         required
                         autocomplete="off"
                         oninput={(e: any) => {
@@ -82,6 +85,7 @@ export default function () {
                 ]}>
                     <input
                         type="text"
+                        ref="telegram"
                         required
                         autocomplete="off"
                         oninput={(e: any) => {
@@ -118,7 +122,7 @@ export default function () {
             </div>
 
             <div class="application-footer">
-                <p>Поля отмеченные <span class="text__fiolet">*</span> обязательные к заполнению</p>
+                <p class="application-text">Поля отмеченные <span class="text__fiolet">*</span> обязательные к заполнению</p>
                 <button
                     class="btn btn__primary"
 
@@ -137,7 +141,7 @@ export default function () {
                         }
                         let answer = await front.Services.functions.sendApi("/api/Message", data)
 
-                        console.log('=041922=', answer)
+                        // console.log('=041922=', answer)
 
                         Fn.initOne("modalNotify", {
                             icon: success,
@@ -146,7 +150,6 @@ export default function () {
                         })
 
                         Func.clearFields()
-
                     }}
                 >
                     Отправить

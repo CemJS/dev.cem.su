@@ -44,7 +44,7 @@ export const formPhone = function (form: Form) {
     form.valid = true
     return true
   } else {
-    form.error = "Некорректно номер"
+    form.error = "Некорректный номер"
     form.valid = false
     return false
   }

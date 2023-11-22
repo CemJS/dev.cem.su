@@ -2,18 +2,21 @@
   {
     "name": "Местонахождение",
     "icon": "/contents/icons/location.svg",
-    "desc": "г. Новороссийск​, ул.Набережная им. Адмирала Серебрякова, 27а, ​4 этаж, офис 39"
+    "desc": "г. Новороссийск​, ул.Набережная им. Адмирала Серебрякова, 27а, ​4 этаж, офис 39",
+    "link": "https://yandex.ru/maps/970/novorossiysk/house/naberezhnaya_admirala_serebryakova_27a/Z04YcQ9kS0ACQFpufXtwc39mYw==/?indoorLevel=1&ll=37.784255%2C44.712357&z=17.06"
   },
   {
     "name": "Позвоните нам",
     "icon": "/contents/icons/phone.svg",
     "desc": "+7(938)-540-4512",
-    "center": true
+    "center": true,
+    "link": "tel:+7(938)-540-4512"
   },
   {
     "name": "Напишите нам",
     "icon": "/contents/icons/mail.svg",
     "desc": "support@crypto-emergency.com",
-    "center": true
+    "center": true,
+    "link": "mailto:support@crypto-emergency.com"
   }
 ]
