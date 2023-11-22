@@ -4,7 +4,7 @@ import success from '@svg/icons/success.svg'
 export default function () {
     return (
         <footer class="modal_footer">
-            <p>Поля отмеченные <span class="text__fiolet">*</span> обязательные к заполнению</p>
+            <p class="modal-footer__text">Поля отмеченные <span class="text__fiolet">*</span> обязательные к заполнению</p>
             <button
                 class="btn btn__primary"
                 onclick={async () => {

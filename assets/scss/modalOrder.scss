@@ -56,11 +56,6 @@
         background: var(--back_modal);
         box-shadow: 0 0 15px -10px rgba(221, 221, 221, 0.5);
         color: var(--white);
-
-
-        @media(max-width: 464px) {
-            padding: 0.8rem;
-        }
     }
 
     &_header {
@@ -90,5 +85,30 @@
         justify-content: center;
         align-items: center;
         gap: 0.8rem;
+    }
+}
+
+@media(max-width: 464px) {
+    .modal {
+        &_button {
+            &-close {
+                padding: 0.3rem 0.4rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        &_form {
+            gap: 1.5rem;
+        }
+
+        &-footer {
+            &__text {
+                font-size: 0.6rem;
+            }
+        }
+
+        .mb_1 {
+            margin-bottom: 0.8rem;
+        }
     }
 }

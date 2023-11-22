@@ -396,8 +396,8 @@
 .field {
   width: 100%;
   position: relative;
-  height: 3rem;
-  line-height: 3rem;
+  height: var(--field-height);
+  line-height: var(--field-height);
 
   input {
     position: absolute;
@@ -405,7 +405,7 @@
     outline: none;
     font-size: 1rem;
     padding: 0 1.5rem;
-    line-height: 3rem;
+    line-height: var(--field-height);
     border-radius: 1rem;
     border: 1px solid var(--fiolet-light1);
     background: transparent;
@@ -440,7 +440,7 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    height: 3rem;
+    height: var(--field-height);
     transition: 0.2s ease;
 
     &__necessarily {
@@ -519,7 +519,6 @@
   }
 
   // states input
-
   &-textarea {
     height: auto;
     line-height: normal;
@@ -546,6 +545,21 @@
       }
     }
 
+  }
+
+  @media(max-width: 464px) {
+
+    input {}
+
+    &_labelLine {
+      font-size: 0.8rem;
+      margin: 0 1rem;
+    }
+
+    &-status {
+      top: -1.2rem;
+      font-size: 0.8rem;
+    }
   }
 }
 
