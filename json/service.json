@@ -2,7 +2,7 @@
   {
     "icon": "/contents/iconsForDev/laptop.svg",
     "category": "Sites",
-    "desc": "Lending page"
+    "desc": "Landing page"
   },
   {
     "icon": "/contents/iconsForDev/autsorsing.svg",
@@ -32,7 +32,7 @@
   {
     "icon": "/contents/iconsForDev/bitrix.svg",
     "category": "Web 3.0",
-    "desc": "Смарт контракты"
+    "desc": "Смарт-контракты"
   },
   {
     "icon": "/contents/iconsForDev/dizayn.svg",
