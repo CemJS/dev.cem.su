@@ -132,16 +132,28 @@ export default function () {
                         }
 
                         let data = {
-                            title: Static.title,
-                            fullName: Static.form.fullName.value,
-                            email: Static.form.email.value,
-                            phone: Static.form.phone.value,
-                            telegram: Static.form.telegram.value,
-                            comment: Static.form.comment.value,
+                            action: "contactForm",
+                            formName: "Оставьте заявку на проект",
+                            contactForm: {
+                                fullName: Static.form.fullName.value,
+                                email: Static.form.email.value,
+                                phone: Static.form.phone.value,
+                                telegram: Static.form.telegram.value,
+                                comment: Static.form.comment.value,
+                            }
                         }
-                        let answer = await front.Services.functions.sendApi("/api/Message", data)
+                        let answer = await front.Services.functions.sendApi("/api/tg/dev-cem", data)
 
                         // console.log('=041922=', answer)
+
+                        if (answer.error) {
+                            Fn.initOne("modalNotify", {
+                                icon: success,
+                                title: "Упс, ошибка...",
+                                text: answer.error
+                            })
+                            return
+                        }
 
                         Fn.initOne("modalNotify", {
                             icon: success,
