@@ -1,4 +1,4 @@
-import { Cemjsx, Static, Ref, Fn, front } from "cemjs-all"
+import { Cemjsx, Static, Ref, Fn, front, Func } from "cemjs-all"
 import success from '@svg/icons/success.svg'
 
 export default function () {
@@ -14,7 +14,7 @@ export default function () {
 
                     Ref.modal.classList.remove('modal__active');
                     setTimeout(() => {
-                        Fn.clearData();
+                        Func.close()
                     }, 500)
 
                     let data = {
@@ -29,8 +29,6 @@ export default function () {
                         }
                     }
                     let answer = await front.Services.functions.sendApi("/api/tg/dev-cem", data)
-
-                    // console.log('=041922=', answer)
 
                     if (answer.error) {
                         Fn.initOne("modalNotify", {

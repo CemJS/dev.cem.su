@@ -5,7 +5,7 @@ import Navigation from "./navigation"
 front.listener.finish = () => {
     setTimeout(() => {
         Func.close()
-    }, 5000);
+    }, 2000);
 }
 
 front.func.show = function ($el: HTMLElement) {
